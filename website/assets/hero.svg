@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#051329"/>
+      <stop offset="40%" stop-color="#0a2240"/>
+      <stop offset="100%" stop-color="#133b66"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dfb15b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#dfb15b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0e2a4a"/>
+      <stop offset="50%" stop-color="#1a4875"/>
+      <stop offset="100%" stop-color="#0e2a4a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfb15b"/>
+      <stop offset="100%" stop-color="#a67b2d"/>
+    </linearGradient>
+    <linearGradient id="treeGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#144d75"/>
+      <stop offset="100%" stop-color="#08223c"/>
+    </linearGradient>
+    <linearGradient id="treeGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b5a8c"/>
+      <stop offset="100%" stop-color="#0a2a47"/>
+    </linearGradient>
+    
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <!-- Sun Rays & Glow -->
+  <circle cx="960" cy="500" r="450" fill="url(#sunGlow)"/>
+  <g opacity="0.15">
+    <!-- Starburst / Rays -->
+    <polygon points="960,500 0,0 0,100" fill="#dfb15b"/>
+    <polygon points="960,500 300,0 450,0" fill="#dfb15b"/>
+    <polygon points="960,500 800,0 950,0" fill="#dfb15b"/>
+    <polygon points="960,500 1300,0 1450,0" fill="#dfb15b"/>
+    <polygon points="960,500 1800,0 1920,0" fill="#dfb15b"/>
+    <polygon points="960,500 1920,300 1920,450" fill="#dfb15b"/>
+    <polygon points="960,500 1920,700 1920,850" fill="#dfb15b"/>
+    <polygon points="960,500 0,600 0,750" fill="#dfb15b"/>
+  </g>
+
+  <!-- Stylized Rising Sun (Motto Connection) -->
+  <circle cx="960" cy="500" r="140" fill="url(#goldGrad)" opacity="0.85"/>
+  
+  <!-- Clouds (Sleek Geometric) -->
+  <path d="M120,400 Q180,350 240,400 T360,400 L360,450 L120,450 Z" fill="rgba(255, 255, 255, 0.04)"/>
+  <path d="M1500,300 Q1580,240 1660,300 T1820,300 L1820,360 L1500,360 Z" fill="rgba(255, 255, 255, 0.04)"/>
+
+  <!-- Background Trees / Forest Silhouette -->
+  <g opacity="0.7">
+    <!-- Far Trees Left -->
+    <polygon points="100,850 200,600 300,850" fill="url(#treeGrad1)"/>
+    <polygon points="220,850 320,630 420,850" fill="url(#treeGrad2)"/>
+    <polygon points="50,850 130,670 210,850" fill="url(#treeGrad2)"/>
+    
+    <!-- Far Trees Right -->
+    <polygon points="1600,850 1700,580 1800,850" fill="url(#treeGrad1)"/>
+    <polygon points="1500,850 1620,610 1740,850" fill="url(#treeGrad2)"/>
+    <polygon points="1720,850 1800,660 1880,850" fill="url(#treeGrad2)"/>
+  </g>
+
+  <!-- School Building Facade -->
+  <g id="school-building" transform="translate(0, 100)">
+    <!-- Base Platform -->
+    <rect x="460" y="700" width="1000" height="50" rx="5" fill="#0b2038" stroke="#1c4470" stroke-width="3"/>
+    <rect x="430" y="730" width="1060" height="20" rx="3" fill="#08182b"/>
+
+    <!-- Main Building Block -->
+    <rect x="520" y="440" width="880" height="260" fill="url(#buildingGrad)" stroke="#1a4066" stroke-width="2"/>
+    
+    <!-- Left Wing -->
+    <rect x="360" y="520" width="160" height="180" fill="url(#buildingGrad)" stroke="#1a4066" stroke-width="2"/>
+    <rect x="340" y="500" width="200" height="20" fill="url(#goldGrad)"/>
+    <!-- Left Wing Windows -->
+    <rect x="390" y="550" width="30" height="50" rx="3" fill="#051326"/>
+    <rect x="450" y="550" width="30" height="50" rx="3" fill="#051326"/>
+    <rect x="390" y="620" width="30" height="50" rx="3" fill="#051326"/>
+    <rect x="450" y="620" width="30" height="50" rx="3" fill="#051326"/>
+
+    <!-- Right Wing -->
+    <rect x="1400" y="520" width="160" height="180" fill="url(#buildingGrad)" stroke="#1a4066" stroke-width="2"/>
+    <rect x="1380" y="500" width="200" height="20" fill="url(#goldGrad)"/>
+    <!-- Right Wing Windows -->
+    <rect x="1440" y="550" width="30" height="50" rx="3" fill="#051326"/>
+    <rect x="1500" y="550" width="30" height="50" rx="3" fill="#051326"/>
+    <rect x="1440" y="620" width="30" height="50" rx="3" fill="#051326"/>
+    <rect x="1500" y="620" width="30" height="50" rx="3" fill="#051326"/>
+
+    <!-- Main Roof Pediment (Classical Temple Style) -->
+    <polygon points="960,320 860,390 1060,390" fill="url(#goldGrad)"/>
+    <polygon points="960,300 800,390 1120,390" fill="url(#goldGrad)" opacity="0.9"/>
+    
+    <!-- Central Portico Columns -->
+    <rect x="850" y="390" width="220" height="50" fill="#0d2e52"/>
+    <g stroke="#dfb15b" stroke-width="2" fill="none">
+      <!-- 4 Pillars -->
+      <line x1="880" y1="440" x2="880" y2="700" stroke-width="12" stroke="#08182b"/>
+      <line x1="880" y1="440" x2="880" y2="700" stroke-width="6" stroke="#dfb15b"/>
+
+      <line x1="930" y1="440" x2="930" y2="700" stroke-width="12" stroke="#08182b"/>
+      <line x1="930" y1="440" x2="930" y2="700" stroke-width="6" stroke="#dfb15b"/>
+
+      <line x1="990" y1="440" x2="990" y2="700" stroke-width="12" stroke="#08182b"/>
+      <line x1="990" y1="440" x2="990" y2="700" stroke-width="6" stroke="#dfb15b"/>
+
+      <line x1="1040" y1="440" x2="1040" y2="700" stroke-width="12" stroke="#08182b"/>
+      <line x1="1040" y1="440" x2="1040" y2="700" stroke-width="6" stroke="#dfb15b"/>
+    </g>
+
+    <!-- Main Building Windows (Grid) -->
+    <g fill="#071b30" opacity="0.9">
+      <rect x="560" y="470" width="50" height="70" rx="5"/>
+      <rect x="630" y="470" width="50" height="70" rx="5"/>
+      <rect x="700" y="470" width="50" height="70" rx="5"/>
+      <rect x="770" y="470" width="50" height="70" rx="5"/>
+      
+      <rect x="1100" y="470" width="50" height="70" rx="5"/>
+      <rect x="1170" y="470" width="50" height="70" rx="5"/>
+      <rect x="1240" y="470" width="50" height="70" rx="5"/>
+      <rect x="1310" y="470" width="50" height="70" rx="5"/>
+
+      <rect x="560" y="580" width="50" height="70" rx="5"/>
+      <rect x="630" y="580" width="50" height="70" rx="5"/>
+      <rect x="700" y="580" width="50" height="70" rx="5"/>
+      <rect x="770" y="580" width="50" height="70" rx="5"/>
+      
+      <rect x="1100" y="580" width="50" height="70" rx="5"/>
+      <rect x="1170" y="580" width="50" height="70" rx="5"/>
+      <rect x="1240" y="580" width="50" height="70" rx="5"/>
+      <rect x="1310" y="580" width="50" height="70" rx="5"/>
+    </g>
+
+    <!-- Center Arch Entrance behind Pillars -->
+    <path d="M910,700 L910,550 A50,50 0 0,1 1010,550 L1010,700 Z" fill="#040e1a"/>
+  </g>
+
+  <!-- Foreground Trees & Hedges -->
+  <g>
+    <!-- Left Fore Tree -->
+    <circle cx="280" cy="780" r="100" fill="url(#treeGrad2)"/>
+    <circle cx="240" cy="740" r="70" fill="url(#treeGrad1)" opacity="0.9"/>
+    <rect x="270" y="850" width="20" height="100" fill="#051426"/>
+
+    <!-- Right Fore Tree -->
+    <circle cx="1640" cy="780" r="100" fill="url(#treeGrad2)"/>
+    <circle cx="1680" cy="740" r="70" fill="url(#treeGrad1)" opacity="0.9"/>
+    <rect x="1630" y="850" width="20" height="100" fill="#051426"/>
+    
+    <!-- Clean Hedges Along Platform -->
+    <ellipse cx="600" cy="820" rx="140" ry="30" fill="url(#treeGrad1)"/>
+    <ellipse cx="800" cy="820" rx="140" ry="30" fill="url(#treeGrad2)"/>
+    <ellipse cx="1120" cy="820" rx="140" ry="30" fill="url(#treeGrad1)"/>
+    <ellipse cx="1320" cy="820" rx="140" ry="30" fill="url(#treeGrad2)"/>
+  </g>
+
+  <!-- Ground Plane -->
+  <rect x="0" y="840" width="1920" height="240" fill="#091d33" stroke="#16395e" stroke-width="4"/>
+  <rect x="0" y="870" width="1920" height="210" fill="#051221"/>
+</svg>
